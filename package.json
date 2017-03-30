@@ -1,5 +1,5 @@
 {
-  "name": "basketball app",
+  "name": "basketballApp",
   "version": "1.1.1",
   "description": "API for leaderboards for our basketball game",
   "start" : "node server.js",

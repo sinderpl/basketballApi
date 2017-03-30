@@ -68,7 +68,7 @@ function findOne(collectionName, query, callback){
 
 function getLeaderboard(req, res){
   //Constuct the query
-  var query = {"users"};
+  var query = {"users" : "Alan"};
   //Find one user only in the database
   findOne("leaderboard", query, function (err, item){
       //Log any errors
@@ -90,4 +90,31 @@ function getLeaderboard(req, res){
         res.status(500).send("Leaderboard has not been found");
     }
   });
+}
+
+
+  function addRecord(req, res){
+    //Constuct the query
+    var query = {"users" : "Alan"};
+    //Find one user only in the database
+    findOne("leaderboard", query, function (err, item){
+        //Log any errors
+        if(err) {
+         console.log(err);
+          return;
+       }
+
+        //If result is not empty return the data
+        if(item){
+          console.log(item);
+          console.log("Leaderboard has been found");
+           res.type('json');
+           res.json(item);
+
+        }
+        else{
+          console.log("Leaderboard not found\n");
+          res.status(500).send("Leaderboard has not been found");
+      }
+    });
 }
