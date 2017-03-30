@@ -16,7 +16,6 @@
     "@angular/platform-browser": "2.0.0",
     "@angular/platform-browser-dynamic": "2.0.0",
     "@angular/platform-server": "2.0.0",
-    "@ionic/storage": "1.1.6",
     "angular2-jwt": "^0.1.27",
     "auth0-js": "7.4.0",
     "auth0-lock": "10.5.1",
@@ -24,9 +23,6 @@
     "ejs": "^2.5.6",
     "express": "^4.15.2",
     "https": "^1.0.0",
-    "ionic-angular": "2.0.0-rc.1",
-    "ionic-native": "2.2.3",
-    "ionicons": "3.0.0",
     "mongodb": "^2.2.24",
     "mongoose": "^4.8.6",
     "restify": "^4.3.0",
@@ -60,8 +56,7 @@
     "cordova-plugin-console",
     "cordova-plugin-whitelist",
     "cordova-plugin-splashscreen",
-    "cordova-plugin-statusbar",
-    "ionic-plugin-keyboard"
+    "cordova-plugin-statusbar"
   ],
   "cordovaPlatforms": [
     "android"

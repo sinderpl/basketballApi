@@ -30,7 +30,6 @@ app.post('/quotes', (req, res) => {
 //Get user data, verify by pin
 //Test url to access
 // http://localhost:3000/user/Alan%20Niemiec/2345
-app.post('/user', getUserData);
 
 app.get('/leaderboard' ,getLeaderboard);
 
