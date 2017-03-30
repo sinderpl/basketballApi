@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Banking application example forms</title>
+</head>
+<body>
+</body>
+</html>
+
+Get user data: <br>
+<form action="/user" method="POST">
+  Username: <br>
+  <input type="text" placeholder="username" name="username">
+  Pin:
+  <input type="password" placeholder="pin" name="pin">
+  <button type="submit">Submit</button>
+</form>
+<br>
+
+Get account data: <br>
+<form action="/account" method="POST">
+  Account ID:
+  <input type="text" placeholder="accid" name="accid">
+  <button type="submit">Submit</button>
+</form>
+<br>
+
+Add transaction to account:
+<form action="/transaction" method='POST'>
+  Account ID:
+  <input type="text" placeholder="accid" name="accid">
+  Date:
+  <input type="text" placeholder="date" name="date">
+  Type:
+  <input type="text" placeholder="type" name="type">
+  Amount:
+  <input type="text" placeholder="amount" name="amount">
+  Summary:
+  <input type="text" placeholder="summary" name="summary">
+  <button type="submit">Submit</button>
+</form>
+
+Add payee to user:
+<form action="/payee" method='POST'>
+  Username:
+  <input type="text" placeholder="username" name="username">
+  Payee name:
+  <input type="text" placeholder="name" name="name">
+  Payee account:
+  <input type="text" placeholder="account" name="account">
+
+  <button type="submit">Submit</button>
+</form>
